@@ -6,6 +6,7 @@ import Procedures from "../components/HomePack/Procedures"
 import ServicesSection from "../components/HomePack/ServicesSection"
 import AboutUs from "../components/AboutUs"
 import Partnership from "../components/Partnership"
+import ContactCmp from "../components/NewContact/ContactCmp"
 
 
 function IndexPage() {
@@ -15,7 +16,7 @@ function IndexPage() {
       <Principles />
       <AboutUs />
       <ServicesSection />
-      <Procedures />
+      <ContactCmp />
       <Partnership />
     </div>
   )
