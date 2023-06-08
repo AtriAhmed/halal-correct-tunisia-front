@@ -90,17 +90,17 @@ export default function ContactCmp() {
                                 <div className="grid grid-cols-12 gap-4">
                                     <div className="col-span-6 flex flex-col justify-around gap-4">
                                         <div className="flex flex-col"><input className="py-2 px-4 border rounded-full outline-none" type="text" placeholder="Nom" value={name} onChange={e => setName(e.target.value)} />
-                                            <span className="text-red-500">{errors.name}</span>
+                                            <span className="text-red-500">{errors?.name}</span>
                                         </div>
                                         <div className="flex flex-col"><input className="py-2 px-4 border rounded-full outline-none" type="email" placeholder="Email" value={email} onChange={e => setEmail(e.target.value)} />
-                                            <span className="text-red-500">{errors.email}</span>
+                                            <span className="text-red-500">{errors?.email}</span>
                                         </div>
                                         <div className="flex flex-col"><input className="py-2 px-4 border rounded-full outline-none" type="text" placeholder="Sujet" value={subject} onChange={e => setSubject(e.target.value)} />
-                                            <span className="text-red-500">{errors.subject}</span>
+                                            <span className="text-red-500">{errors?.subject}</span>
                                         </div>
                                     </div>
                                     <div className="col-span-6 flex flex-col"><textarea className="py-3 px-5 border rounded-3xl outline-none w-full" name="message" placeholder="Message" id="" cols="30" rows="8" value={message} onChange={e => setMessage(e.target.value)} ></textarea>
-                                        <span className="text-red-500">{errors.message}</span>
+                                        <span className="text-red-500">{errors?.message}</span>
                                     </div>
                                 </div>
                                 <div><button className="w-full border border-[#4da6e7] text-[#4da6e7] rounded-full py-3 hover:bg-[#4da6e7] transition duration-300 hover:text-white">Send message Now</button></div>
