@@ -19,15 +19,15 @@ function sendRequest(
   explanationVal
 ) {
   const data = {
-    company:companyVal,
-    name:nameVal,
-    email:emailVal,
-    tel:telVal,
-    office_address:officeAddressVal,
-    factory_address:factoryAddressVal,
-    explanation:explanationVal
+    company: companyVal,
+    name: nameVal,
+    email: emailVal,
+    tel: telVal,
+    office_address: officeAddressVal,
+    factory_address: factoryAddressVal,
+    explanation: explanationVal
   }
-  return axios.post('/api/create-apply',data)
+  return axios.post('/api/create-apply', data)
 }
 
 function Apply() {
@@ -93,9 +93,9 @@ function Apply() {
 
   if (sent)
     return (
-      <div className="w-full max-w-[500px] px-10 py-28 rounded-lg bg-teal-500 flex flex-col items-center justify-center">
+      <div className="w-full max-w-[500px] px-10 py-28 rounded-lg bg-[#0F70B7] flex flex-col items-center justify-center">
         <h3 className="mb-6 font-open font-light text-3xl scr800:text-4xl text-center text-white">
-          Your request has been sent
+          Votre demande a été envoyer avec succès
         </h3>
         <CircleCheck width={125} height={125} fill="white" />
         <Link
@@ -106,7 +106,7 @@ function Apply() {
             icon={faArrowLeft}
             className="mr-2 ml-[-20px] text-teal-500"
           />
-          Home
+          Acueuil
         </Link>
       </div>
     )
@@ -117,15 +117,15 @@ function Apply() {
       onSubmit={handleSubmit}
     >
       <section className="w-full scr800:w-1/2 bg-white p-10 rounded-t-xl scr800:rounded-l-xl scr800:rounded-tr-none">
-        <h1 className="px-2 py-6 font-open font-normal text-2xl scr800:text-3xl text-center capitalize text-teal-500">
-          General information
+        <h1 className="px-2 py-6 font-open font-normal text-2xl scr800:text-3xl text-center capitalize text-[#0F70B7]">
+          Information generale
         </h1>
         <div className="w-full flex flex-col gap-6 font-open font-normal text-base text-slate-900 ">
           <input
             type="text"
             value={company}
             onChange={e => setCompany(e.target.value)}
-            placeholder="Your Company Name"
+            placeholder="Nom du société"
             className="px-2 py-2 border-b border-slate-500 placeholder-slate-500 bg-transparent outline-none"
             required
             autoFocus
@@ -134,7 +134,7 @@ function Apply() {
             type="text"
             value={name}
             onChange={e => setName(e.target.value)}
-            placeholder="Your Name"
+            placeholder="Nom"
             className="px-2 py-2 border-b border-slate-500 placeholder-slate-500 bg-transparent outline-none"
             required
           />
@@ -142,7 +142,7 @@ function Apply() {
             type="email"
             value={email}
             onChange={e => setEmail(e.target.value)}
-            placeholder="Your Email"
+            placeholder="Email"
             className="px-2 py-2 border-b border-slate-500 placeholder-slate-500 bg-transparent outline-none"
             required
           />
@@ -150,22 +150,22 @@ function Apply() {
             type="text"
             value={tel}
             onChange={e => setTel(e.target.value)}
-            placeholder="Your Phone"
+            placeholder="Tel."
             className="px-2 py-2 border-b border-slate-500 placeholder-slate-500 bg-transparent outline-none"
             required
           />
         </div>
       </section>
-      <section className="w-full scr800:w-1/2 bg-teal-500 p-10 rounded-b-xl scr800:rounded-r-xl scr800:rounded-bl-none">
+      <section className="w-full scr800:w-1/2 bg-[#0F70B7] p-10 rounded-b-xl scr800:rounded-r-xl scr800:rounded-bl-none">
         <h1 className="px-2 py-6 font-open font-normal text-2xl scr800:text-3xl text-center capitalize text-white">
-          Contact details
+          Detailles du contact
         </h1>
         <div className="w-full flex flex-col gap-4 font-open font-normal text-base text-white ">
           <input
             type="text"
             value={office_address}
             onChange={e => setOfficeAddress(e.target.value)}
-            placeholder="Head Office Address"
+            placeholder="Adresse du siège social"
             className="px-2 py-1 border-b border-slate-100 placeholder-slate-100 bg-transparent outline-none"
             required
           />
@@ -173,7 +173,7 @@ function Apply() {
             type="text"
             value={factory_address}
             onChange={e => setFactoryAddress(e.target.value)}
-            placeholder="Factory Address"
+            placeholder="Adresse de l'usine"
             className="px-2 py-1 border-b border-slate-100 placeholder-slate-100 bg-transparent outline-none"
             required
           />
@@ -181,7 +181,7 @@ function Apply() {
             type="text"
             value={explanation}
             onChange={e => setExplanation(e.target.value)}
-            placeholder="Please provide an explanation"
+            placeholder="Merci de fournir une explication."
             rows="4"
             className="px-2 py-1 border-b border-slate-100 placeholder-slate-100 bg-[rgb(255,255,255,.1)] outline-none resize-none"
             required
@@ -199,15 +199,14 @@ function Apply() {
             </div>
           )}
           <div
-            className={`${
-              !error ? "mt-4" : ""
-            } mb-8 flex flex-col scr600:flex-row gap-4 font-semibold`}
+            className={`${!error ? "mt-4" : ""
+              } mb-8 flex flex-col scr600:flex-row gap-4 font-semibold`}
           >
             <div className="w-full scr600:w-1/2 relative">
               <input
                 type="submit"
-                value="Send"
-                className="w-full px-3 py-2 rounded-2xl text-slate-900 bg-gradient-to-br from-green-200 to-green-400 cursor-pointer hover:filter hover:saturate-[200%] transition duration-300"
+                value="Envoyer"
+                className="w-full px-3 py-2 rounded-2xl text-slate-900 bg-gradient-to-br from-[#ffffff] to-[#0F70B7] cursor-pointer hover:filter hover:saturate-[200%] transition duration-300"
               />
               {loading && (
                 <i className="absolute right-5 top-1/2 translate-y-[-50%]">
@@ -228,7 +227,7 @@ function Apply() {
                 icon={faArrowLeft}
                 className="mr-2 ml-[-20px] text-slate-600"
               />
-              Back
+              Retour
             </Link>
           </div>
         </div>

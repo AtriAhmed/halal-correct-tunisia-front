@@ -19,21 +19,21 @@ export default function About() {
                     </div>
                     <div className="col-span-6">
                         <div className="grid grid-cols-12 gap-4">
-                            <div className="col-span-6 flex flex-col shadow-xl p-8 font-bold items-center justify-center gap-4">
-                                <div className="text-xl">57</div>
-                                <div className="text-xl">pays musulmans</div>
+                            <div className="col-span-6 flex flex-col font-semibold items-center justify-center">
+                                <div className="text-2xl shadow-lg p-8 mb-[-60px] text-[#0F70B7]">57</div>
+                                <div className="text-xl shadow-xl p-8 pt-20 text-center">pays musulmans</div>
                             </div>
-                            <div className="col-span-6 flex flex-col shadow-xl p-8 font-bold items-center justify-center gap-4">
-                                <div className="">45</div>
-                                <div className="">milliards. $</div>
+                            <div className="col-span-6 flex flex-col font-semibold items-center justify-center">
+                                <div className="text-2xl shadow-lg p-8 mb-[-60px] text-[#0F70B7]">1,6</div>
+                                <div className="text-xl shadow-xl p-8 pt-20 text-center">Milliards de musulmans dans le monde</div>
                             </div>
-                            <div className="col-span-6 flex flex-col shadow-xl p-8 font-bold items-center justify-center gap-4">
-                                <div className="">632</div>
-                                <div className="">Happy Clients</div>
+                            <div className="col-span-6 flex flex-col font-semibold items-center justify-center">
+                                <div className="text-2xl shadow-lg p-8 mb-[-60px] text-[#0F70B7]">45</div>
+                                <div className="text-xl shadow-xl p-8 pt-20 text-center">Millions de musulmans en Europe</div>
                             </div>
-                            <div className="col-span-6 flex flex-col shadow-xl p-8 font-bold items-center justify-center gap-4">
-                                <div className="">24</div>
-                                <div className="">Awwards Won</div>
+                            <div className="col-span-6 flex flex-col font-semibold items-center justify-center">
+                                <div className="text-2xl shadow-lg p-8 mb-[-60px] text-[#0F70B7]">632</div>
+                                <div className="text-xl shadow-xl p-8 pt-20 text-center">milliards. $ de denrées alimentaires certifiées halal exportées en 2018</div>
                             </div>
                         </div>
                     </div>

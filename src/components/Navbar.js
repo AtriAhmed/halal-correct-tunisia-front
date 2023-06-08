@@ -45,14 +45,13 @@ function Navbar({ location }) {
             ? "text-[#0F70B7]"
             : "text-white hover:text-[#a1d3f7]"
             }`} >
-            <Link to="/work-method">Certification</Link>
+            <Link to="/our-mission">Notre mission</Link>
           </li>
-          <li>
-            <Dropdown
-              {...policiesItems}
-              path="/services"
-              active={location?.pathname.indexOf("/services") === 0}
-            />
+          <li className={`py-2 font-open font-normal transition duration-300 ${location?.pathname.indexOf("/services") === 0
+            ? "text-[#0F70B7]"
+            : "text-white hover:text-[#a1d3f7]"
+            }`} >
+            <Link to="/services">Nos services</Link>
           </li>
           <li>
             <Dropdown
@@ -66,7 +65,7 @@ function Navbar({ location }) {
           to="/contact/apply"
           className="px-5 py-2 border-2 border-[#0F70B7] rounded-full hidden min-[950px]:block font-open font-normal text-sm text-white uppercase hover:bg-[#0F70B7] transition duration-500"
         >
-          apply now
+          APPLIQUER
         </Link>
       </div>
     </div>
@@ -115,6 +114,10 @@ const contactItems = {
     {
       text: "Réclamation",
       path: "/contact/complaint",
+    },
+    {
+      text: "Vérification du certificat",
+      path: "/contact/check",
     }
   ],
 }

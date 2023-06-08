@@ -1,29 +1,20 @@
 import React, { useState } from "react"
 import Seo from "../../components/seo"
 import About from "../../components/AboutPack/About"
-import Courses1 from '../../images/courses-01.jpg'
+import TeamImage from '../../images/notre-equipe.jpg'
+import MissionImage from '../../images/mission.jpg'
 import NewAboutCard from "../../components/NewAboutPage/NewAboutCard"
 
 const data = [
   {
-    title: "Content 1",
-    content: "Content 1",
-    img: Courses1
-  },
-  {
-    title: "Title 2",
-    content: "Content 2",
-    img: Courses1
-  },
-  {
-    title: "Title 3",
-    content: "Content 3",
-    img: Courses1
+    title: "Accompagnement vers la certification Halal ",
+    content: "Vous guide vers la certification Halal, pour assurer le maintien de votre certificat avec le respect permanent des lois, des réglementations et des normes nationales et internationales. En tant que partenaire d’accompagnement, nous réfléchissons de manière proactive à la résolution de divers problèmes grâce à notre vision transversale de vos projets. .La mission de Halal QMS Center ne se limite pas à valider la conformité aux normes nationales et internationales.mais consiste à travailler en étroite collaboration avec les clients dans le but de réduire les coûts de l’entreprise, en minimisant les risques liés à une gestion non contrôlée des processus...",
+    img: MissionImage
   },
   {
     title: "Notre équipe",
-    content: "Notre équipe de consultants possède une grande expérience dans l'accompagnement des clients vers la mise en œuvre réussie de leurs systèmes de gestion de la qualité Halal conformément aux normes et aux directives (d'évaluation). Ils ont de nombreuses années d'expérience pratique dans le domaine de la gestion de la qualité Halal grâce aux certificats de qualité correspondants..L'étude continue des problèmes des entreprises, depuis les difficultés d'application et d'interprétation des réglementations auxquelles elles s'adressent et auxquelles elles doivent se conformer , ont permis à Halal QMS Center d'acquérir une expérience de première importance en tant partenaire d’accompagnement reconnu au niveau national et international.. Vous avez des différents processus et des différents produits/ligne de production/services ? Vous n’avez pas une cartographie des processus ??",
-    img: Courses1
+    content: "Notre équipe de consultants possède une grande expérience dans l'accompagnement des clients vers la mise en œuvre réussie de leurs systèmes de gestion de la qualité Halal conformément aux normes et aux directives (d'évaluation). Ils ont de nombreuses années d'expérience pratique dans le domaine de la gestion de la qualité Halal grâce aux certificats de qualité correspondants..L'étude continue des problèmes des entreprises, depuis les difficultés d'application et d'interprétation des réglementations auxquelles elles s'adressent et auxquelles elles doivent se conformer, ont permis à Halal QMS Center d'acquérir une expérience de première importance en tant partenaire d’accompagnement reconnu au niveau national et international.. Vous avez des différents processus et des différents produits/ligne de production/services ? Vous n’avez pas une cartographie des processus ??",
+    img: TeamImage
   }
 ]
 
@@ -36,10 +27,8 @@ export default function Index() {
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-12 gap-20">
           <div className="col-span-4 flex flex-col gap-4 p-10">
-            <div className={`transition duration-300 border-2 border-[rgb(15,112,183)] text-[rgb(15,112,183)] font-bold text-xl p-4 text-center cursor-pointer ${selected == 0 ? 'bg-[rgb(15,112,183)] text-white' : 'text-[rgb(15,112,183)]'}`} onClick={() => setSelected(0)} >Halal QMS Center</div>
-            <div className={`transition duration-300 border-2 border-[rgb(15,112,183)] text-[rgb(15,112,183)] font-bold text-xl p-4 text-center cursor-pointer ${selected == 1 ? 'bg-[rgb(15,112,183)] text-white' : 'text-[rgb(15,112,183)]'}`} onClick={() => setSelected(1)}>Notre mission</div>
-            <div className={`transition duration-300 border-2 border-[rgb(15,112,183)] text-[rgb(15,112,183)] font-bold text-xl p-4 text-center cursor-pointer ${selected == 2 ? 'bg-[rgb(15,112,183)] text-white' : 'text-[rgb(15,112,183)]'}`} onClick={() => setSelected(2)}>La mission Halal QMS Center</div>
-            <div className={`transition duration-300 border-2 border-[rgb(15,112,183)] text-[rgb(15,112,183)] font-bold text-xl p-4 text-center cursor-pointer ${selected == 3 ? 'bg-[rgb(15,112,183)] text-white' : 'text-[rgb(15,112,183)]'}`} onClick={() => setSelected(3)}>Notre équipe</div>
+            <div className={`transition duration-300 border-2 border-[rgb(15,112,183)] text-[rgb(15,112,183)] font-bold text-xl p-4 text-center cursor-pointer ${selected == 0 ? 'bg-[rgb(15,112,183)] text-white' : 'text-[rgb(15,112,183)]'}`} onClick={() => setSelected(0)}>Accompagnement vers la certification Halal</div>
+            <div className={`transition duration-300 border-2 border-[rgb(15,112,183)] text-[rgb(15,112,183)] font-bold text-xl p-4 text-center cursor-pointer ${selected == 1 ? 'bg-[rgb(15,112,183)] text-white' : 'text-[rgb(15,112,183)]'}`} onClick={() => setSelected(1)}>Notre équipe</div>
           </div>
           <NewAboutCard title={data[selected].title} content={data[selected].content} img={data[selected].img} />
         </div>

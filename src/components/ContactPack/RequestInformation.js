@@ -10,7 +10,7 @@ import validator from "validator"
 import axios from "axios"
 
 function sendRequest(data) {
-  return axios.post('/api/create-question',data)
+  return axios.post('/api/create-question', data)
 }
 
 function RequestInformation() {
@@ -54,7 +54,7 @@ function RequestInformation() {
       email: emailVal,
       tel: telVal,
       question: enquiryVal,
-  }
+    }
 
     try {
       await sendRequest(data)
@@ -69,7 +69,7 @@ function RequestInformation() {
     return (
       <div className="w-full max-w-[500px] px-10 py-28 rounded-lg bg-teal-500 flex flex-col items-center justify-center">
         <h3 className="mb-6 font-open font-light text-3xl scr800:text-4xl text-center text-white">
-          Your request has been sent
+          Votre demande à été envoyer avec succès
         </h3>
         <CircleCheck width={125} height={125} fill="white" />
         <Link
@@ -80,17 +80,17 @@ function RequestInformation() {
             icon={faArrowLeft}
             className="mr-2 ml-[-20px] text-teal-500"
           />
-          Home
+          Acueuil
         </Link>
       </div>
     )
 
   return (
-    <div className="w-full max-w-[500px] px-6 scr600:px-10 py-10 rounded-lg bg-teal-500">
+    <div className="w-full max-w-[500px] px-6 scr600:px-10 py-10 rounded-lg bg-[#0F70B7]">
       <h1 className="px-2 py-10 font-open font-light text-3xl scr800:text-4xl text-center uppercase text-white">
-        Request
+        Demande
         <br />
-        information
+        d'information
       </h1>
       <form
         className="w-full flex flex-col gap-4 font-open font-bold text-base text-white "
@@ -100,7 +100,7 @@ function RequestInformation() {
           type="text"
           value={name}
           onChange={e => setName(e.target.value)}
-          placeholder="Your Name"
+          placeholder="Nom"
           className="px-2 py-1 border-b border-slate-100 placeholder-slate-100 bg-transparent outline-none"
           required
           autoFocus
@@ -109,7 +109,7 @@ function RequestInformation() {
           type="email"
           value={email}
           onChange={e => setEmail(e.target.value)}
-          placeholder="Your Email"
+          placeholder="Email"
           className="px-2 py-1 border-b border-slate-100 placeholder-slate-100 bg-transparent outline-none"
           required
         />
@@ -117,7 +117,7 @@ function RequestInformation() {
           type="text"
           value={tel}
           onChange={e => setTel(e.target.value)}
-          placeholder="Your Phone"
+          placeholder="Tel."
           className="px-2 py-1 border-b border-slate-100 placeholder-slate-100 bg-transparent outline-none"
           required
         />
@@ -125,7 +125,7 @@ function RequestInformation() {
           type="text"
           value={enquiry}
           onChange={e => setEnquiry(e.target.value)}
-          placeholder="Enquiry"
+          placeholder="Demande"
           rows="4"
           className="px-2 py-1 border-b border-slate-100 placeholder-slate-100 bg-[rgb(255,255,255,.1)] outline-none resize-none"
           required
@@ -143,15 +143,14 @@ function RequestInformation() {
           </div>
         )}
         <div
-          className={`${
-            !error ? "mt-8" : ""
-          } mb-8 flex flex-col scr600:flex-row gap-4 font-semibold`}
+          className={`${!error ? "mt-8" : ""
+            } mb-8 flex flex-col scr600:flex-row gap-4 font-semibold`}
         >
           <div className="w-full scr600:w-1/2 relative">
             <input
               type="submit"
-              value="Send"
-              className="w-full px-3 py-2 rounded-2xl text-slate-900 bg-gradient-to-br from-green-200 to-green-400 cursor-pointer hover:filter hover:saturate-[200%] transition duration-300"
+              value="Envoyer"
+              className="w-full px-3 py-2 rounded-2xl text-slate-900 bg-gradient-to-br from-[#ffffff] to-[#0F70B7] cursor-pointer hover:filter hover:saturate-[200%] transition duration-300"
             />
             {loading && (
               <i className="absolute right-5 top-1/2 translate-y-[-50%]">
@@ -172,7 +171,7 @@ function RequestInformation() {
               icon={faArrowLeft}
               className="mr-2 ml-[-20px] text-slate-600"
             />
-            Back
+            Retour
           </Link>
         </div>
       </form>
