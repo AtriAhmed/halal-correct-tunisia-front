@@ -41,32 +41,30 @@ export default function Index() {
                     <div className="absolute bg-[url(./images/services-right-dec.png)] w-[1136px] h-[244px] right-0 z-1"></div>
                     <div className="flex flex-col justify-center items-center max-7w-xl mx-auto text-center text-lg z-2">
 
-                        <div className='flex gap-4 justify-around items-center pt-48'>
-                            <div className='flex flex-col gap-4 justify-center items-center shadow-xl p-10 font-bold text-xl cursor-pointer' onClick={() => setSelected(3)}>
-                                <div><img src={Quickscan} className=' h-16 w-16 ' alt="" /></div>
+                        <div className='flex gap-4 justify-between items-center pt-48'>
+                            <div className='flex flex-col gap-4 justify-center items-center shadow-xl p-10 font-bold text-sm cursor-pointer' onClick={() => setSelected(3)}>
+                                <div><img src={Quickscan} className=' h-8 w-8 ' alt="" /></div>
                                 <div>Quickscan</div>
                             </div>
-                            <div className='flex flex-col gap-4 justify-center items-center shadow-xl p-10 font-bold text-xl cursor-pointer' onClick={() => setSelected(1)}>
-                                <div><img src={Formationsurmesure} className='h-16 w-16' alt="" /></div>
+                            <div className='flex flex-col gap-4 justify-center items-center shadow-xl p-10 font-bold text-sm cursor-pointer' onClick={() => setSelected(1)}>
+                                <div><img src={Formationsurmesure} className='h-8 w-8' alt="" /></div>
                                 <div>Methode<br /> de travail</div>
                             </div>
-                        </div>
-                        <section className="flex gap-4 justify-center items-center pb-12">
-                            <div className='flex flex-col gap-4 justify-center items-center shadow-xl p-10 font-bold text-xl cursor-pointer' onClick={() => setSelected(0)}>
-                                <div><img src={Quickscan} className=' h-16 w-16 ' alt="" /></div>
+                            <div className='flex flex-col gap-4 justify-center items-center shadow-xl p-10 font-bold text-sm cursor-pointer' onClick={() => setSelected(0)}>
+                                <div><img src={Quickscan} className=' h-8 w-8 ' alt="" /></div>
                                 <div>Services d'audit<br /> interne</div>
                             </div>
 
-                            <div className='flex flex-col gap-4 justify-center items-center shadow-xl p-10 font-bold text-xl cursor-pointer' onClick={() => setSelected(2)}>
-                                <div><img src={ProcessManagement} className=' h-16 w-16 ' alt="" /></div>
+                            <div className='flex flex-col gap-4 justify-center items-center shadow-xl p-10 font-bold text-sm cursor-pointer' onClick={() => setSelected(2)}>
+                                <div><img src={ProcessManagement} className=' h-8 w-8 ' alt="" /></div>
                                 <div>Gestion des processus</div>
                             </div>
 
-                            <div className='flex flex-col gap-4 justify-center items-center shadow-xl p-10 font-bold text-xl cursor-pointer' onClick={() => setSelected(4)}>
-                                <div><img src={Formationsurmesure} className='h-16 w-16' alt="" /></div>
+                            <div className='flex flex-col gap-4 justify-center items-center shadow-xl p-10 font-bold text-sm cursor-pointer' onClick={() => setSelected(4)}>
+                                <div><img src={Formationsurmesure} className='h-8 w-8' alt="" /></div>
                                 <div>Formation sur<br /> mesure</div>
                             </div>
-                        </section>
+                        </div>
 
                         <ServicePageCard selected={selected} />
 

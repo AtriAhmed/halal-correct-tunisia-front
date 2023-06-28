@@ -20,7 +20,7 @@ function Partnership() {
             <div className="w-full px-8 py-16 max-w-w1300 mx-auto">
                 <FadeUpOnScroll>
                     <h3 className="capitalize font-poppins font-bold text-3xl scr800:text-4xl text-center scr800:text-left text-[#0F70B7]  transition-all duration-1000 ">
-                        Accreditation and partnership:
+                    Accréditation et partenariat :
                     </h3>
                 </FadeUpOnScroll>
                 <FadeUpOnScroll>

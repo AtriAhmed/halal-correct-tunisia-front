@@ -1,7 +1,7 @@
 import { Transition } from "@headlessui/react"
 import React, { useEffect, useState } from "react"
 import { Link } from "gatsby"
-import logo from "../images/logo2.png"
+import logo from "../images/qms.png"
 import {
   Accordion,
   AccordionHeader,
@@ -62,7 +62,7 @@ function MobileNavbar() {
             <Link to="/" onClick={() => setMobileNavbarOpen(false)}>
               <img
                 src={logo}
-                alt="halal correct logo"
+                alt="halal qms center logo"
                 className="w-full max-w-[300px] mx-auto"
               />
             </Link>
@@ -148,81 +148,26 @@ const items = [
     path: "/",
   },
   {
-    title: "Apply now",
+    title: "Appliquer maintenant",
     path: "/contact/apply",
   },
   {
-    title: "About us",
-    children: [
-      {
-        title: "Who are we?",
-        path: "/about",
-      },
-      {
-        title: "Company structure",
-        path: "/about/structure",
-      },
-      {
-        title: "Vision, mission and core values",
-        path: "/about/vision",
-      },
-      {
-        title: "International approval",
-        path: "/about/international-approval",
-      },
-      {
-        title: "What does halal mean?",
-        path: "/about/halal-meaning",
-      },
-      {
-        title: "Locations",
-        path: "/about/locations",
-      },
-    ],
+    title: "À propos",
+    path: "/about",
   },
   {
-    title: "Certification",
-    children: [
-      {
-        title: "Certification procedure",
-        path: "/certification/procedure",
-      },
-      {
-        title: "Product categories",
-        path: "/certification/categories",
-      },
-      {
-        title: "Our services",
-        path: "/certification/services",
-      },
-      {
-        title: "Auditing and training",
-        path: "/certification/auditing",
-      },
-      {
-        title: "Benefits of our certification",
-        path: "/certification/benefits",
-      },
-    ],
+    title: "Notre mission",
+    path: "/our-mission",
   },
   {
-    title: "Policies",
-    children: [
-      {
-        title: "Halal guarantee",
-        path: "/policies/guarantee",
-      },
-      {
-        title: "Integrity policy",
-        path: "/policies/integrity",
-      },
-    ],
+    title: "Nos services",
+    path: "/services",
   },
   {
     title: "Contact",
     children: [
       {
-        title: "Request for information",
+        title: "Demande d'information",
         path: "/contact/information",
       },
       {
@@ -230,13 +175,9 @@ const items = [
         path: "/contact/feedback",
       },
       {
-        title: "Complaint",
+        title: "Réclamation",
         path: "/contact/complaint",
-      },
-      {
-        title: "Halal certificate check",
-        path: "/contact/check",
-      },
+      }
     ],
   },
 ]

@@ -81,10 +81,11 @@ export default function ContactCmp() {
                                 allowfullscreen></iframe>
                         </div></div>
                         <div className="col-span-7 flex flex-col gap-4">
-                            <div className="grid grid-cols-12 gap-4 text-gray-500">
-                                <div className="col-span-4 shadow-xl flex flex-col items-center py-5 rounded-xl"><img src={phoneIcon} /><div>+33 6 61 14 27 87</div></div>
-                                <div className="col-span-4 shadow-xl flex flex-col items-center py-5 rounded-xl"><img src={hornIcon} /><div> france@halalcorrect.com</div></div>
-                                <div className="col-span-4 shadow-xl flex flex-col items-center py-5 rounded-xl"><img src={locationIcon} /><div>445 Boulevard Gambeta</div></div>
+                            <div className="grid grid-cols-12 gap-4 text-gray-500 text-center break-all">
+                                <div className="col-span-4 shadow-xl flex flex-col items-center py-5 px-3 rounded-xl"><img src={phoneIcon} /><div>(+216) 29503804</div></div>
+                                <div className="col-span-4 shadow-xl flex flex-col items-center py-5 px-3 rounded-xl"><img src={hornIcon} /><div>halalQMS@halalcorrect.com</div></div>
+                                <div className="col-span-4 shadow-xl flex flex-col items-center py-5 px-3 rounded-xl"><img src={locationIcon} /><div>immeuble new Tower - centre urbain nord – Tunis
+</div></div>
                             </div>
                             <form onSubmit={handleSubmit} className="flex flex-col gap-4">
                                 <div className="grid grid-cols-12 gap-4">
@@ -103,7 +104,7 @@ export default function ContactCmp() {
                                         <span className="text-red-500">{errors?.message}</span>
                                     </div>
                                 </div>
-                                <div><button className="w-full border border-[#4da6e7] text-[#4da6e7] rounded-full py-3 hover:bg-[#4da6e7] transition duration-300 hover:text-white">Send message Now</button></div>
+                                <div><button className="w-full border border-[#4da6e7] text-[#4da6e7] rounded-full py-3 hover:bg-[#4da6e7] transition duration-300 hover:text-white">Envoyer le message maintenant.</button></div>
                             </form>
                         </div>
                     </div>

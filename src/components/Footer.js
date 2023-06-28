@@ -20,25 +20,40 @@ function Footer() {
             </h3>
             <ul className="font-poppins font-light text-sm">
               <li>
-                <span className="font-semibold">ADDRESS: </span>
-                445 Boulevard Gambeta
+                <span className="font-semibold">Adresse: </span>
+                immeuble new Tower - centre urbain nord – Tunis
               </li>
               <li>
-                <span className="font-semibold">Phone: </span>
+                <span className="font-semibold">P.: </span>
                 <a
                   href="tel:+31 71 523 57 70"
                   className="text-blue-500 hover:text-[blue-700] transition duration-300"
                 >
-                  +33 6 61 14 27 87
+                  (+216) 29503804
                 </a>
               </li>
               <li>
+                <span className="font-semibold">F.: </span>
+                <a
+                  href="tel:+31 71 523 57 70"
+                  className="text-blue-500 hover:text-[blue-700] transition duration-300"
+                >
+                  (+216) 71734580
+                </a>
+              </li>
+              <li className="flex flex-col">
                 <span className="font-semibold">Email: </span>
                 <a
                   href="mailto:info@halalcorrect.com"
                   className="text-[#0F70B7] hover:text-blue-700 transition duration-300"
                 >
-                  france@halalcorrect.com
+                   halalQMS@halalcorrect.com
+                </a>
+                <a
+                  href="mailto:info@halalcorrect.com"
+                  className="text-[#0F70B7] hover:text-blue-700 transition duration-300"
+                >
+                   Office@halaqmscenter.com
                 </a>
               </li>
             </ul>
@@ -95,7 +110,7 @@ function Footer() {
           </div>
           <div>
             <h3 className="pb-4 font-poppins font-semibold text-xl text-[#0F70B7] uppercase">
-              Useful Links
+              Liens Utiles
             </h3>
             <ul className=" font-poppins font-normal text-sm flex flex-col gap-4">
               {usefulLinks.map(element => (

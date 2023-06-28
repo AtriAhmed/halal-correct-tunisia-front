@@ -12,7 +12,7 @@ function Why() {
     <div
       className={`min-h-screen w-full whyBackground relative flex items-center justify-center`}
     >
-      <div className="absolute w-full h-full overflow-hidden pointer-events-none">
+      <div className="absolute h-full overflow-hidden pointer-events-none">
 
         <div className="aspect-[1826/915] min-w-full min-h-full relative z-[-1] top-1/2 left-1/2 translate-y-[-50%] translate-x-[-50%]">
           <video autoPlay loop muted>

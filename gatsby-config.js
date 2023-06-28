@@ -12,10 +12,10 @@ require("dotenv").config({
 })
 module.exports = {
   siteMetadata: {
-    title: `Halal Correct`,
+    title: `Halal QMS Center`,
     description: `Halal Correct Certification provides certification of manufacturers and suppliers of halal products. With our experience of many years, Halal Correct Certification has a reputation for being a unique, professional,and expert organization in the Netherlands and Europe.`,
-    author: `halal-correct`,
-    siteUrl: `https://halalcorrect.com`,
+    author: `halal-qms-center`,
+    siteUrl: `https://halalqms.com`,
   },
   plugins: [
     "gatsby-plugin-sitemap",
@@ -34,7 +34,7 @@ module.exports = {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: `Halal Correct Certification`,
-        short_name: `Halal Correct`,
+        short_name: `Halal QMS`,
         start_url: `/`,
         description:
           "Halal Correct Certification provides certification of manufacturers and suppliers of halal products. With our experience of many years, Halal Correct Certification has a reputation for being a unique, professional,and expert organization in the Netherlands and Europe.",
