@@ -25,10 +25,10 @@ export default function Index() {
     <>
       <About />
       <div className="max-w-7xl mx-auto">
-        <div className="grid grid-cols-12 gap-20">
-          <div className="col-span-4 flex flex-col gap-4 p-10">
-            <div className={`transition duration-300 border-2 border-[rgb(15,112,183)] text-[rgb(15,112,183)] font-bold text-xl p-4 text-center cursor-pointer ${selected == 0 ? 'bg-[rgb(15,112,183)] text-white' : 'text-[rgb(15,112,183)]'}`} onClick={() => setSelected(0)}>Accompagnement vers la certification Halal</div>
-            <div className={`transition duration-300 border-2 border-[rgb(15,112,183)] text-[rgb(15,112,183)] font-bold text-xl p-4 text-center cursor-pointer ${selected == 1 ? 'bg-[rgb(15,112,183)] text-white' : 'text-[rgb(15,112,183)]'}`} onClick={() => setSelected(1)}>Notre équipe</div>
+        <div className="grid grid-cols-12 sm:gap-20">
+          <div className="col-span-12 sm:col-span-4 flex sm:flex-col  gap-4 p-5 sm:p-10 text-sm sm:text-xl">
+            <div className={` transition duration-300 border-2 border-[rgb(15,112,183)] text-[rgb(15,112,183)] font-bold p-4 text-center cursor-pointer ${selected == 0 ? 'bg-[rgb(15,112,183)] text-white' : 'text-[rgb(15,112,183)]'}`} onClick={() => setSelected(0)}>Accompagnement vers la certification Halal</div>
+            <div className={` transition duration-300 border-2 border-[rgb(15,112,183)] text-[rgb(15,112,183)] font-bold p-4 text-center cursor-pointer ${selected == 1 ? 'bg-[rgb(15,112,183)] text-white' : 'text-[rgb(15,112,183)]'}`} onClick={() => setSelected(1)}>Notre équipe</div>
           </div>
           <NewAboutCard title={data[selected].title} content={data[selected].content} img={data[selected].img} />
         </div>

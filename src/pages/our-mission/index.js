@@ -23,18 +23,18 @@ export default function Index() {
 
 
     return (
-        <div className="p-20 pb-10 bg-[#f9f9f9]">
-            <div className="text-6xl font-bold text-[#0F70B7] flex justify-center p-20 border-b">Notre mission</div>
-            <div className="max-w-7xl mx-auto py-20">
+        <div className="p-10 sm:p-20 pt-20 pb-10 bg-[#f9f9f9]">
+        <div className="text-6xl font-bold text-[#0F70B7] flex justify-center p-20 border-b">Notre mission</div>
+        <div className="max-w-7xl mx-auto py-20">
 
-                <div className="grid grid-cols-12 gap-20">
-                    <div className="col-span-4 flex flex-col gap-4 p-10">
-                        <div className={`transition duration-300 border-2 border-[rgb(15,112,183)] text-[rgb(15,112,183)] font-bold text-xl p-4 text-center cursor-pointer ${selected == 0 ? 'bg-[rgb(15,112,183)] text-white' : 'text-[rgb(15,112,183)]'}`} onClick={() => setSelected(0)} >Halal QMS Center</div>
-                        <div className={`transition duration-300 border-2 border-[rgb(15,112,183)] text-[rgb(15,112,183)] font-bold text-xl p-4 text-center cursor-pointer ${selected == 1 ? 'bg-[rgb(15,112,183)] text-white' : 'text-[rgb(15,112,183)]'}`} onClick={() => setSelected(1)}>Notre mission</div>
-                    </div>
-                    <NewAboutCard title={data[selected].title} content={data[selected].content} img={data[selected].img} />
+            <div className="grid grid-cols-12 sm:gap-20">
+                <div className="col-span-12 sm:col-span-4 flex flex-col gap-4 p-10">
+                    <div className={`transition duration-300 border-2 border-[rgb(15,112,183)] text-[rgb(15,112,183)] font-bold text-xl p-4 text-center cursor-pointer ${selected == 0 ? 'bg-[rgb(15,112,183)] text-white' : 'text-[rgb(15,112,183)]'}`} onClick={() => setSelected(0)} >Halal QMS Center</div>
+                    <div className={`transition duration-300 border-2 border-[rgb(15,112,183)] text-[rgb(15,112,183)] font-bold text-xl p-4 text-center cursor-pointer ${selected == 1 ? 'bg-[rgb(15,112,183)] text-white' : 'text-[rgb(15,112,183)]'}`} onClick={() => setSelected(1)}>Notre mission</div>
                 </div>
+                <NewAboutCard title={data[selected].title} content={data[selected].content} img={data[selected].img} />
             </div>
         </div>
+    </div>
     )
 }

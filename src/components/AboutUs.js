@@ -40,11 +40,11 @@ const data = [
 export default function AboutUs() {
   return (
     <div className="w-full max-w-7xl mx-auto p-10">
-      <FadeUpOnScroll>
-        <div className="grid grid-cols-12 gap-4">
-          {data.map(card => <AboutCard img={card.img} hoverImg={card.hoverImg} title={card.title} content={card.content} />)}
-        </div>
-      </FadeUpOnScroll>
-    </div>
+    <FadeUpOnScroll>
+      <div className="grid grid-cols-12 gap-4">
+        {data.map(card => <AboutCard img={card.img} hoverImg={card.hoverImg} title={card.title} content={card.content} />)}
+      </div>
+    </FadeUpOnScroll>
+  </div>
   )
 }

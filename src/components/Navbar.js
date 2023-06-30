@@ -11,8 +11,8 @@ function Navbar({ location }) {
   return (
     <div className="fixed z-[100] w-full bg-[rgba(0,0,0,.45)]">
       <div className="w-full max-w-w1300 flex items-center justify-between m-auto px-3 py-4">
-        <Link to="/">
-          <h2 className="uppercase font-poppins font-light text-xl scr1100:text-3xl text-center text-white transition-all duration-300">
+      <Link to="/">
+          <h2 className="font-bold uppercase font-poppins text-xl scr1100:text-3xl text-center text-white transition-all duration-300">
             HALAL QMS
             <span className="scr600:hidden">
               <br />

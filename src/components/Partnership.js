@@ -1,5 +1,6 @@
 import React from "react"
 import { Swiper, SwiperSlide } from "swiper/react"
+import swiper9 from "../images/logo2.png"
 import swiper1 from "../images/swiper_1.jpg"
 import swiper2 from "../images/swiper_2.jpg"
 import swiper3 from "../images/swiper_3.jpg"
@@ -61,6 +62,9 @@ function Partnership() {
 export default Partnership
 
 const slides = [
+    {
+        src: swiper9
+    },
     {
         src: swiper1,
     },

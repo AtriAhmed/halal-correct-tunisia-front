@@ -24,12 +24,11 @@ function Why() {
         <div className="w-full max-w-w1300 m-auto px-8 py-32 flex flex-col scr1000:flex-row">
           <div className="w-full scr1000:w-1/2 flex flex-col gap-6 scr1000:gap-12 items-center scr1000:items-start">
             <h1 className="capitalize font-poppins font-bold text-white text-3xl transition-all duration-1000 scr1000:text-5xl text-center scr1000:text-left">
-              Les avantages de la
-              <div className="text-[#0F70B7] text-center"> certification</div>
-              <span className="block">Par Halal QMS Center</span>
+              <div className="text-[#0F70B7] text-start">Halal QMS Center</div>
+              <span className="block text-start">Vous guider vers la certification Halal</span>
             </h1>
             <Link
-              to="/certification/benefits"
+              to="/about"
               className="uppercase font-poppins font-semibold text-md text-white rounded-full border-2 border-[#0F70B7] px-5 py-1 bg-transparent hover:bg-[#0F70B7] transition duration-500"
             >
               En savoir plus

@@ -32,21 +32,14 @@ const data = [
 export default function ServicesSection() {
   return (
     <div className="w-full bg-[#f9f9f9] relative">
-      <div className="absolute bg-[url(./images/services-right-dec.png)] w-[1136px] h-[244px] right-0"></div>
-      <div className="flex justify-center items-center max-w-5xl mx-auto text-left text-lg">
-        <FadeUpOnScroll>
-          <section className="grid grid-cols-12 gap-5 py-24">
-            <div className="col-span-6 flex flex-col gap-4 pt-5">
-              <ServiceCard title={data[0].title} content={data[0].content} link={data[0].link} icon={faLightbulb} />
-              <ServiceCard title={data[1].title} content={data[1].content} link={data[1].link} icon={faClipboardCheck} />
-            </div>
-            <div className="col-span-6 flex flex-col gap-4">
-              <ServiceCard title={data[2].title} content={data[2].content} link={data[2].link} icon={faChartBar} />
-              <ServiceCard title={data[3].title} content={data[3].content} link={data[3].link} icon={faEye} />
-            </div>
-          </section>
-        </FadeUpOnScroll>
-      </div>
+    <div className="absolute bg-[url(./images/services-right-dec.png)] w-[1136px] h-[244px] right-0"></div>
+    <div className="flex justify-center items-center max-w-5xl mx-auto text-left text-lg">
+      <FadeUpOnScroll>
+        <section className="grid grid-cols-12 gap-5 py-24 px-5 xl:px-0">
+          {data.map(service => <ServiceCard title={service.title} content={service.content} link={service.link} icon={service.icon} />)}
+        </section>
+      </FadeUpOnScroll>
     </div>
+  </div>
   )
 }
