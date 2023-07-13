@@ -10,7 +10,7 @@ function Why() {
 
   return (
     <div
-      className={`min-h-screen w-full whyBackground relative flex items-center justify-center`}
+      className={`min-h-screen w-full whyBackground relative flex items-center justify-center overflow-hidden`}
     >
       <div className="absolute h-full overflow-hidden pointer-events-none">
 

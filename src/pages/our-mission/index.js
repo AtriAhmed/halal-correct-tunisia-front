@@ -23,9 +23,9 @@ export default function Index() {
 
 
     return (
-        <div className="p-10 sm:p-20 pt-20 pb-10 bg-[#f9f9f9]">
-        <div className="text-6xl font-bold text-[#0F70B7] flex justify-center p-20 border-b">Notre mission</div>
-        <div className="max-w-7xl mx-auto py-20">
+        <div className="sm:p-10 sm:p-20 pt-20 pb-10 bg-[#f9f9f9]">
+        <div className="text-5xl sm:text-6xl font-bold text-[#0F70B7] text-center p-5 sm:p-20 border-b">Notre mission</div>
+        <div className="max-w-7xl mx-auto py-10 sm:py-20">
 
             <div className="grid grid-cols-12 sm:gap-20">
                 <div className="col-span-12 sm:col-span-4 flex flex-col gap-4 p-10">
